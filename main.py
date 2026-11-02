@@ -10,7 +10,7 @@ os.environ["API_KEY"] = ""
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
 
 # 3. Simple loop to retry if the server is busy
-print("Sending request to gemini-3.8-flash...")
+print("Sending request to gemini-1.5-flash...")
 for attempt in range(3):
     try:
         response = llm.invoke("What is the meaning of life?")
